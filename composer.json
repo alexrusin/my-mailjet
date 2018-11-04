@@ -1,0 +1,30 @@
+{
+    "name": "alexrusin/my-mailjet",
+    "description": "MailJet transport for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Rusin",
+            "email": "alex@alexrusin.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "mailjet/mailjet-apiv3-php": "^1.4"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Apr\\MailJet\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apr\\MailJet\\MailJetServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
